@@ -111,6 +111,8 @@ STATICFILES_DIRS = (
     BASE_DIR / 'base_static',
 )
 
+MEDIA_URL = 'media/' # É aonde fica os arquivos que o usuario irá enviar,
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

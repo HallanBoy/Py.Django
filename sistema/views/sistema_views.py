@@ -6,6 +6,6 @@ from django.shortcuts import render
 def index(request):
     return render(
         request,
-        'sistema/index.html',
+        'sistema/sistema.html',
     )
 

@@ -10,8 +10,8 @@ class UsuarioAdmin(admin.ModelAdmin):
 
 @admin.register(models.Filme)
 class UsuarioAdmin(admin.ModelAdmin):
-  list_display = ('id', 'nome_filme', 'ano_lancamento', 'estudio', 'genero', 'sinopse', 'data_cadastro',)
+  list_display = ('id', 'nome', 'ano_lancamento', 'estudio', 'genero', 'sinopse', 'data_cadastro',)
 
 @admin.register(models.Genero)
 class UsuarioAdmin(admin.ModelAdmin):
-  list_display = ('nome_genero', 'data_cadastro',)
+  list_display = ('id', 'nome', 'data_cadastro',)
