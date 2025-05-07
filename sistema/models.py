@@ -38,8 +38,8 @@ class Filme (models.Model):
   nome = models.CharField(max_length=50)
   ano_lancamento = models.DateField(default=timezone.now)
   estudio = models.CharField(max_length=50)
-  # genero = models.CharField(max_length=50)
-  genero = models.ForeignKey(Genero, on_delete=models.SET_NULL, null=True, blank=True)
+  genero = models.CharField(max_length=50)
+  # genero = models.ForeignKey(Genero, on_delete=models.SET_NULL, null=True, blank=True)
   sinopse = models.TextField()
   data_cadastro = models.DateField(default=timezone.now)
 

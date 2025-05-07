@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastrar Filme</title>
+  </head>
+  <body>
+    <h1>Cadastrar Filme</h1>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Cadastrar</button>
+    </form>
+  </body>
+</html>
