@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sistema',
+    'sistema','filmes','usuarios',
 ]
 
 MIDDLEWARE = [
@@ -111,7 +111,11 @@ STATICFILES_DIRS = (
     BASE_DIR / 'base_static',
 )
 
-MEDIA_URL = 'media/' # É aonde fica os arquivos que o usuario irá enviar,
+MEDIA_URL = 'media/' # É o endereco url inicial onde os arquivos de media serão salvos
+MEDIA_ROOT = BASE_DIR / 'media' # Um caminho onde os arquivos de midia serão salvos.
+
+STATIC_URL = 'static/' # É o endereço url inicial aonde estão os arquivos estáticos
+STATIC_ROOT = BASE_DIR / 'static' # Um caminho para onde os arquivos estáticos são coletados.
 
 
 # Default primary key field type
