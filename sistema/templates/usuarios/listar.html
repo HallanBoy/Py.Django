@@ -1,29 +1,30 @@
 <div class="container">
-  <table class="table">
-    <caption class="table-caption">
-      Listagem dos Usuarios
-    </caption>
+    <table class="table">
+        <caption class="table-caption">
+            Listagem dos Usuários
+        </caption>
 
-    <thead>
-      <tr class="table-row table-row-header">
-        <th class="table-header">Id</th>
-        <th class="table-header">Nome</th>
-        <th class="table-header">Sobrenome</th>
-        <th class="table-header">Email</th>
-        <th class="table-header">Telefone</th>
-      </tr>
-    </thead>
+        <thead>
+            <tr class="table-row table-row-header">
+                <th class="table-header">Id</th>
+                <th class="table-header">Nome</th>
+                <th class="table-header">Sobrenome</th>
+                <th class="table-header">Email</th>
+                <th class="table-header">Telefone</th>
+            </tr>
+        </thead>
 
-    <tbody>
-      {% for usuario in Usuarios %}
-      <tr class="table-row">
-        <td class="table-cel">{{ usuario.id }}</td>
-        <td class="table-cel">{{ usuario.nome }}</td>
-        <td class="table-cel">{{usuario.sobrenome }}</td>
-        <td class="table-cel">{{ usuario.email }}</td>
-        <td class="table-cel">{{ usuario.telefone }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+        <tbody>
+            {% for usuario in usuarios %}
+                <tr class="table-row">
+                    <td class="table-cel"> {{ usuario.id }} </td>
+                    <td class="table-cel">{{ usuario.nome }} </td>
+                    <td class="table-cel">{{ usuario.sobrenome }} </td>
+                    <td class="table-cel">{{ usuario.email }} </td>
+                    <td class="table-cel">{{ usuario.telefone }} </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
 </div>

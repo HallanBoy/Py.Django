@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\transfero.2025\Desktop\workspace\UC_3\project\venv"
+VIRTUAL_ENV="C:\workspace\projetos\project\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -5,13 +5,14 @@ from sistema import models
 # Aqui fica o registro do Usuário
 @admin.register(models.Usuario)
 class UsuarioAdmin(admin.ModelAdmin):
-  list_display = ('id','nome','sobrenome','email','ativo',)
+    list_display = ('id', 'nome', 'sobrenome', 'email', 'ativo',)
 
-
+# Aqui fica o registro do Filme
 @admin.register(models.Filme)
-class UsuarioAdmin(admin.ModelAdmin):
-  list_display = ('id', 'nome', 'ano_lancamento', 'estudio', 'genero', 'sinopse', 'data_cadastro',)
+class FilmeAdmin(admin.ModelAdmin):
+    list_display = ('id', 'nome', 'ano', 'estudio', 'genero',)
 
+# Aqui fica o registro do Gênero
 @admin.register(models.Genero)
-class UsuarioAdmin(admin.ModelAdmin):
-  list_display = ('id', 'nome', 'data_cadastro',)
+class GeneroAdmin(admin.ModelAdmin):
+    list_display = ('id', 'nome',)

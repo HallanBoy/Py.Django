@@ -3,12 +3,11 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-lvd-1nk-!9$5o1j1ch&4#(t58f*cvier4=e*evc693@67ptyz-'
+SECRET_KEY = 'django-insecure-p0a*r41y0lg#da3lm40qfo@*)(^5iujy527bi94lnqz%ahn1%6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -25,7 +24,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sistema','filmes','usuarios',
+    'sistema',
+    'filmes',
+    'usuarios',
 ]
 
 MIDDLEWARE = [
@@ -104,22 +105,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+
 
 # Tupla que direciona os arquivos estáticos para dentro da pasta base_static
 STATICFILES_DIRS = (
     BASE_DIR / 'base_static',
 )
 
-MEDIA_URL = 'media/' # É o endereco url inicial onde os arquivos de media serão salvos
+MEDIA_URL = 'media/' # É o endereco url inicial onde os arquivos de midia serão salvos. 
 MEDIA_ROOT = BASE_DIR / 'media' # Um caminho onde os arquivos de midia serão salvos.
 
-STATIC_URL = 'static/' # É o endereço url inicial aonde estão os arquivos estáticos
-STATIC_ROOT = BASE_DIR / 'static' # Um caminho para onde os arquivos estáticos são coletados.
+STATIC_URL = 'static/' # É o endereco url inicial aonde estão os arquivos estáticos.
+STATIC_ROOT = BASE_DIR / 'static'# Um caminho para onde os arquivos estáticos são coletados.
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
