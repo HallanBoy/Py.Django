@@ -2,10 +2,10 @@
   <div class="logo">streambox</div>
   <nav>
     <ul class="nav-links">
-      <li><a href=""></a>Home</li>
-      <li><a href=""></a>Movies</li>
-      <li><a href=""></a>Tv Shows</li>
-      <li><a href=""></a>My list</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Filmes</a></li>
+      <li><a href="#">Series</a></li>
+      <li><a href="#">Minha Lista</a></li>
     </ul>
   </nav>
 </headder>
@@ -19,5 +19,28 @@
     position: sticky;
     top: 0;
     z-index: 0;
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #b00610;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-links li a {
+    font-weight: 600;
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .nav-links li a:hover {
+    color: #fff;
   }
 </style>
