@@ -20,3 +20,6 @@
 # path() -> é um método do django que permite realizar a inserção de uma url.
 if settings.DEBUG: 
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+# Terminar o exercício de ontem e entregar por whatsapp até as 14:00-

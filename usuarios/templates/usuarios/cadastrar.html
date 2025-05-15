@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    {% include "partials/_head.html" %} {% comment %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    {% endcomment %}
+  </head>
+  <body>
+    <main class="cadastrar-body">
+      <div class="cadastrar-conteiner">
+        <h2>Welcome to our support page!</h2>
+        <p>
+          We're here to help you with any problems you may be having with our
+          product.
+        </p>
+        <form action="POST" class="cadastrar-form">
+          <input type="Nome" placeholder="Nome" required />
+          <input type="Sobrenome" placeholder="Sobrenome" required />
+          <input type="email" placeholder="Email" required />
+          <select id="pais" name="pais">
+            <option value="br">Brasil</option>
+            <option value="us">Estados Unidos</option>
+            <input type="tel" placeholder="telefone" name="telefone" />
+            <!-- Adicione mais países aqui -->
+            <input type="CPF" placeholder="Digite o seu CPF" />
+            <input type="senha" placeholder="Digite sua senha" />
+            <input type="checkbox" id="termos" />
+            <label for="termos">Eu aceito os termos e condições.</label>
+            <button id="botao-aceitar" disabled>Aceitar</button>
+            <button class="cadastrar">Cadastrar</button>
+          </select>
+        </form>
+      </div>
+      <style>
+        .body {
+          display: grid;
+        }
+      </style>
+    </main>
+
+    {% comment %}
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Cadastrar</button>
+    </form>
+    {% endcomment %}
+  </body>
+</html>
